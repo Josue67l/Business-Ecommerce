@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Negocios</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Negocio en Línea</h1>
+            <nav class="space-x-4">
+                <a href="#home" class="hover:underline">Inicio</a>
+                <a href="#productos" class="hover:underline">Productos</a>
+                <a href="#servicios" class="hover:underline">Servicios</a>
+                <a href="#ofertas" class="hover:underline">Ofertas</a>
+                <a href="#contacto" class="hover:underline">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="home" class="p-10 text-center bg-white">
+        <h2 class="text-4xl font-semibold mb-4">Bienvenidos a Nuestro Negocio</h2>
+        <p class="text-lg">Ofrecemos una amplia gama de productos y servicios para satisfacer todas tus necesidades.</p>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="p-10 bg-gray-50">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Nuestros Productos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-white shadow-lg p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Producto 1</h3>
+                <p class="text-gray-700">Descripción breve del producto 1.</p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Producto 2</h3>
+                <p class="text-gray-700">Descripción breve del producto 2.</p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Producto 3</h3>
+                <p class="text-gray-700">Descripción breve del producto 3.</p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="p-10 bg-white">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Nuestros Servicios</h2>
+        <ul class="list-disc list-inside">
+            <li class="mb-2">Servicio 1: Descripción breve del servicio.</li>
+            <li class="mb-2">Servicio 2: Descripción breve del servicio.</li>
+            <li class="mb-2">Servicio 3: Descripción breve del servicio.</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Ofertas -->
+    <section id="ofertas" class="p-10 bg-gray-50">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Ofertas Especiales</h2>
+        <p class="text-center">¡No te pierdas nuestras ofertas exclusivas por tiempo limitado!</p>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="p-10 bg-white">
+        <h2 class="text-3xl font-semibold mb-6 text-center">Contáctanos</h2>
+        <form class="max-w-md mx-auto">
+            <div class="mb-4">
+                <label for="nombre" class="block text-gray-700">Nombre</label>
+                <input type="text" id="nombre" class="w-full p-2 border rounded" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700">Correo Electrónico</label>
+                <input type="email" id="email" class="w-full p-2 border rounded" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="mb-4">
+                <label for="mensaje" class="block text-gray-700">Mensaje</label>
+                <textarea id="mensaje" class="w-full p-2 border rounded" placeholder="Escribe tu mensaje aquí..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-6 text-center">
+        <p>&copy; 2025 Negocio en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+<form action="send_email.php" method="POST" class="max-w-md mx-auto">
+    <div class="mb-4">
+        <label for="nombre" class="block text-gray-700">Nombre</label>
+        <input type="text" id="nombre" name="nombre" class="w-full p-2 border rounded" placeholder="Tu nombre" required>
+    </div>
+    <div class="mb-4">
+        <label for="email" class="block text-gray-700">Correo Electrónico</label>
+        <input type="email" id="email" name="email" class="w-full p-2 border rounded" placeholder="Tu correo electrónico" required>
+    </div>
+    <div class="mb-4">
+        <label for="mensaje" class="block text-gray-700">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" class="w-full p-2 border rounded" placeholder="Escribe tu mensaje aquí..." rows="4" required></textarea>
+    </div>
+    <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded">Enviar</button>
+</form>
+
+</body>
+</html>
+
+
+
+
+
